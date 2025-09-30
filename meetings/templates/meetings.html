@@ -1,0 +1,10 @@
+<div class="meetings-section">
+  <h2>Meetings</h2>
+  <ul>
+    {% for meeting in meetings %}
+    <li>{{meeting.title}}</li>
+    {% empty %}
+    <li>No meetings available at the moment.</li>
+    {% endfor %}
+  </ul>
+</div>
